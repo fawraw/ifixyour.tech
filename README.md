@@ -12,6 +12,20 @@ hébergé sur GitHub Pages, domaine `ifixyour.tech`.
 
 Le site est reconstruit et en ligne en ~1 minute. Aucune autre étape.
 
+**Règle YAML absolue** : toute valeur de front matter contenant un deux-points est
+mise entre guillemets (`description: "documentée : symptômes"`), sinon le YAML est
+invalide. `strict_front_matter: true` est actif : le build échoue au lieu de publier
+une page cassée, c'est voulu.
+
+## Design
+
+Direction « Établi 192E49 » (août 2026) : la constante de marque est le marine
+`#192e49`, mesuré au pixel sur le logo JPEG, utilisé pour le header et la plaque.
+Polices auto-hébergées dans `assets/fonts/` (Space Grotesk variable pour le titrage,
+IBM Plex Mono pour les données), aucune ressource externe au runtime. Les PNG de
+`assets/img/` (icône, plaque, favicon, og-image) sont des recadrages purs du
+`logo.jpeg` source, régénérables via un script AppKit/JXA.
+
 ## Structure
 
 - `index.md` : page d'accueil

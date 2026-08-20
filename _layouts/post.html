@@ -6,9 +6,17 @@ layout: default
 		<h1>{{ page.title }}</h1>
 		<p class="post-meta">
 			<time datetime="{{ page.date | date_to_xmlschema }}">{{ page.date | date: "%d.%m.%Y" }}</time>
-			{% if page.appareil %} · {{ page.appareil }}{% endif %}
 		</p>
+		{% if page.appareil or page.carte or page.symptome or page.duree %}
+		<dl class="fiche-article">
+			{% if page.appareil %}<dt>Modèle</dt><dd>{{ page.appareil }}</dd>{% endif %}
+			{% if page.carte %}<dt>Carte</dt><dd>{{ page.carte }}</dd>{% endif %}
+			{% if page.symptome %}<dt>Symptôme</dt><dd>{{ page.symptome }}</dd>{% endif %}
+			{% if page.duree %}<dt>Durée</dt><dd>{{ page.duree }}</dd>{% endif %}
+		</dl>
+		{% endif %}
 	</header>
 	{{ content }}
+	<p class="end-mark" aria-hidden="true">● ● ●</p>
 	<p class="back-link"><a href="{{ '/journal/' | relative_url }}">&larr; Retour au journal</a></p>
 </article>

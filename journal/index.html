@@ -1,21 +1,23 @@
 ---
 layout: default
-title: Journal d'atelier
+title: "Journal d'atelier"
 description: "Chaque carte diagnostiquée et réparée, documentée : symptômes, mesures, intervention, résultat."
 ---
+<p class="kicker">Relevés d'intervention</p>
+
 <h1>Journal d'atelier</h1>
 
 <p>Chaque réparation documentée : symptômes, diagnostic, mesures, intervention,
-résultat. Le rythme suit l'atelier : irrégulier, sans obligation.</p>
+résultat. Le rythme suit l'atelier, sans obligation.
+<span class="feed-note"><a href="/feed.xml">Flux RSS</a></span></p>
 
 <ul class="post-list">
 	{% for post in site.posts %}
 	<li>
-		<a href="{{ post.url | relative_url }}">{{ post.title }}</a>
-		<p class="post-meta">
-			<time datetime="{{ post.date | date_to_xmlschema }}">{{ post.date | date: "%d.%m.%Y" }}</time>
-			{% if post.appareil %} · {{ post.appareil }}{% endif %}
-		</p>
+		<time datetime="{{ post.date | date_to_xmlschema }}">{{ post.date | date: "%d.%m.%Y" }}</time>
+		<a class="post-title" href="{{ post.url | relative_url }}">{{ post.title }}</a>
+		{% if post.description %}<p class="post-excerpt">{{ post.description }}</p>{% endif %}
+		{% if post.appareil %}<span class="tag">{{ post.appareil }}</span>{% endif %}
 	</li>
 	{% endfor %}
 </ul>
