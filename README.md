@@ -24,4 +24,19 @@ Le site est reconstruit et en ligne en ~1 minute. Aucune autre étape.
 
 `ifixyour.tech` → GitHub Pages : 4 enregistrements A (185.199.108.153,
 185.199.109.153, 185.199.110.153, 185.199.111.153) + CNAME `www` →
-`fawraw.github.io`, en mode « DNS only » le temps que le certificat TLS soit émis.
+`fawraw.github.io`.
+
+**⚠️ Ces 5 enregistrements doivent rester en « DNS only » (nuage gris).** Le proxy
+Cloudflare (orange) empêche GitHub d'émettre et de **renouveler** (~3 mois) le
+certificat TLS.
+
+## Dépannage
+
+Si le certificat expire ou que le HTTPS casse : vérifier que les enregistrements sont
+bien en DNS only, puis forcer une nouvelle émission en détachant/rattachant le domaine :
+
+```bash
+echo '{"cname":null}' | gh api -X PUT repos/fawraw/ifixyour.tech/pages --input -
+echo '{"cname":"ifixyour.tech"}' | gh api -X PUT repos/fawraw/ifixyour.tech/pages --input -
+gh api repos/fawraw/ifixyour.tech/pages --jq '.https_certificate.state'   # → approved
+```
