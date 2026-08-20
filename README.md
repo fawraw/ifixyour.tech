@@ -24,14 +24,16 @@ Direction « Établi 192E49 » (août 2026) : la constante de marque est le mari
 Polices auto-hébergées dans `assets/fonts/` (Space Grotesk variable pour le titrage,
 IBM Plex Mono pour les données), aucune ressource externe au runtime. Les PNG de
 `assets/img/` (icône, plaque, favicon, og-image) sont des recadrages purs du
-`logo.jpeg` source, régénérables via un script AppKit/JXA.
+`logo.jpeg` source : les régénérer avec `osascript -l JavaScript tools/make-assets.js`
+(lancé depuis la racine du dépôt, macOS, aucune dépendance).
 
 ## Structure
 
 - `index.md` : page d'accueil
 - `journal/` : index du journal (liste automatique des articles de `_posts/`)
 - `_layouts/`, `assets/css/style.css` : gabarits et style (clair/sombre automatique)
-- `_config.yml` : config Jekyll (SEO tags + sitemap générés automatiquement)
+- `_config.yml` : config Jekyll (SEO tags, sitemap et flux RSS générés automatiquement)
+- `tools/make-assets.js` : régénération des assets PNG depuis le logo source
 - `CNAME` : domaine custom GitHub Pages
 
 ## DNS (Cloudflare)

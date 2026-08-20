@@ -1,5 +1,5 @@
 title: iFixYour.Tech
-description: "Atelier suisse de réparation électronique board-level. Micro-soudure sur cartes mères de smartphones et cartes logiques MacBook, journal d'atelier public pendant la montée en compétence."
+description: "Atelier suisse de réparation électronique board-level. Micro-soudure sur cartes mères de smartphones et cartes logiques MacBook, chaque intervention documentée dans le journal d'atelier."
 url: "https://ifixyour.tech"
 lang: fr
 timezone: Europe/Zurich
@@ -9,6 +9,11 @@ permalink: /journal/:year/:slug/
 strict_front_matter: true
 
 logo: /assets/img/og-image.png
+
+social:
+  name: iFixYourTech Sàrl
+  links:
+    - https://www.linkedin.com/company/ifixyourtech/
 
 plugins:
   - jekyll-seo-tag

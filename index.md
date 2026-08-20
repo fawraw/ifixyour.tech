@@ -19,8 +19,9 @@ de MacBook, sous microscope, composant par composant.</p>
 
 <div class="notice">
 <span class="notice-label">Atelier en préparation</span>
-<p>Nous ne prenons pas encore d'appareils en charge. La priorité actuelle est la
-maîtrise complète du geste, carte après carte, documentée publiquement dans le
+<p>L'atelier se met en place : banc de mesure, poste de micro-soudure, filière de
+pièces et procédures de test. Nous ne prenons pas encore d'appareils en charge.
+Chaque intervention menée sur l'établi est documentée publiquement dans le
 <a href="/journal/">journal d'atelier</a> : symptômes, mesures, intervention,
 résultat. Sans marketing et sans promesse.</p>
 </div>
