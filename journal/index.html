@@ -1,0 +1,21 @@
+---
+layout: default
+title: Journal d'atelier
+description: Chaque carte diagnostiquée et réparée, documentée — symptômes, mesures, intervention, résultat.
+---
+<h1>Journal d'atelier</h1>
+
+<p>Chaque réparation documentée : symptômes, diagnostic, mesures, intervention,
+résultat. Le rythme suit l'atelier — irrégulier, sans obligation.</p>
+
+<ul class="post-list">
+	{% for post in site.posts %}
+	<li>
+		<a href="{{ post.url | relative_url }}">{{ post.title }}</a>
+		<p class="post-meta">
+			<time datetime="{{ post.date | date_to_xmlschema }}">{{ post.date | date: "%d.%m.%Y" }}</time>
+			{% if post.appareil %} · {{ post.appareil }}{% endif %}
+		</p>
+	</li>
+	{% endfor %}
+</ul>

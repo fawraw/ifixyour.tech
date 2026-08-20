@@ -1,0 +1,14 @@
+---
+layout: default
+---
+<article>
+	<header class="post-header">
+		<h1>{{ page.title }}</h1>
+		<p class="post-meta">
+			<time datetime="{{ page.date | date_to_xmlschema }}">{{ page.date | date: "%d.%m.%Y" }}</time>
+			{% if page.appareil %} · {{ page.appareil }}{% endif %}
+		</p>
+	</header>
+	{{ content }}
+	<p class="back-link"><a href="{{ '/journal/' | relative_url }}">&larr; Retour au journal</a></p>
+</article>
