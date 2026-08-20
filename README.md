@@ -1,6 +1,6 @@
 # ifixyour.tech
 
-Site public d'iFixYourTech Sàrl — one-pager + journal d'atelier. Statique (Jekyll),
+Site public d'iFixYourTech Sàrl : one-pager + journal d'atelier. Statique (Jekyll),
 hébergé sur GitHub Pages, domaine `ifixyour.tech`.
 
 ## Publier un article du journal
@@ -14,11 +14,11 @@ Le site est reconstruit et en ligne en ~1 minute. Aucune autre étape.
 
 ## Structure
 
-- `index.md` — page d'accueil
-- `journal/` — index du journal (liste automatique des articles de `_posts/`)
-- `_layouts/`, `assets/css/style.css` — gabarits et style (clair/sombre automatique)
-- `_config.yml` — config Jekyll (SEO tags + sitemap générés automatiquement)
-- `CNAME` — domaine custom GitHub Pages
+- `index.md` : page d'accueil
+- `journal/` : index du journal (liste automatique des articles de `_posts/`)
+- `_layouts/`, `assets/css/style.css` : gabarits et style (clair/sombre automatique)
+- `_config.yml` : config Jekyll (SEO tags + sitemap générés automatiquement)
+- `CNAME` : domaine custom GitHub Pages
 
 ## DNS (Cloudflare)
 

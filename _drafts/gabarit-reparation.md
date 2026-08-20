@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "MODÈLE — Ne s'allume plus : diagnostic et réparation"
+title: "MODÈLE : ne s'allume plus, diagnostic et réparation"
 description: "Une phrase de résumé pour les moteurs de recherche : appareil, panne, issue."
 appareil: "MacBook Pro 13\" 2020 (A2251, carte 820-01949)"
 tags: [macbook, dégât-liquide, ppbus]

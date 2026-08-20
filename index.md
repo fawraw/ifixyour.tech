@@ -1,6 +1,6 @@
 ---
 layout: default
-title: Réparation électronique board-level en Suisse — atelier en préparation
+title: Réparation électronique board-level en Suisse, atelier en préparation
 ---
 
 <img class="logo-banner" src="/assets/img/logo.jpeg" alt="Logo iFixYour.Tech" width="1500" height="750">
@@ -9,7 +9,7 @@ title: Réparation électronique board-level en Suisse — atelier en préparati
 
 <p class="lede">iFixYourTech Sàrl est un atelier suisse de réparation électronique
 <strong>board-level</strong> : micro-soudure sur cartes mères de smartphones et cartes
-logiques de MacBook — les pannes que la réparation classique déclare irréparables.</p>
+logiques de MacBook : les pannes que la réparation classique déclare irréparables.</p>
 
 <div class="notice">
 <strong>L'atelier est en préparation.</strong> Nous ne prenons pas encore d'appareils en
@@ -18,7 +18,7 @@ documentée publiquement.
 </div>
 
 C'est l'objet du [journal d'atelier](/journal/) : chaque carte diagnostiquée et réparée
-y est décrite — symptômes, mesures, intervention, résultat. Sans marketing et sans
+y est décrite : symptômes, mesures, intervention, résultat. Sans marketing et sans
 promesse : des cartes, des schémas et des soudures.
 
 ## À terme
